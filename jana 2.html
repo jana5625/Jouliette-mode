@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Carta de Productes</title>
+    <style>
+        body {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            background-color: #fcc7d2;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .Caixa6 { 
+            background-color: #f783b2;
+            box-shadow: 5px 5px 10px #760431;
+            color: rgb(245, 62, 120);
+            font-size: 50px;
+            text-align: center;
+            padding: 15px;
+            border-radius: 10px;
+            width: 80%;
+            margin: auto;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: rgb(241, 224, 200);
+            box-shadow: 5px 5px 10px #4a3208;
+            border-radius: 15px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background-color: rgb(201, 243, 209);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        th, td {
+            padding: 15px;
+            border: 1px solid #054641;
+        }
+
+        th {
+            background-color: #5cc3a2;
+            color: rgb(5, 77, 65);
+        }
+
+        td {
+            font-size: 18px;
+            color: #03473f;
+        }
+
+        .comanda {
+            padding: 20px;
+            background-color: rgb(241, 224, 200);
+            border-radius: 10px;
+            box-shadow: 5px 5px 10px #4a3208;
+            width: 500px;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="Caixa6">CARTA DELS PASTISSOS</div>
+
+    <div class="container">
+        <table>
+            <tr>
+                <th>PASTISSOS</th>
+                <th>PREU / porció (€)</th>
+                <th>IMATGE</th>
+            </tr>
+            <tr>
+                <td>Cheesecake de nutella</td>
+                <td>4.50</td>
+                <td><img src="nutella.webp" alt="nutella" width="200"></td>
+            </tr>
+            <tr>
+                <td>Cheesecake de happy hipo kinder</td>
+                <td>4.20</td>
+                <td><img src="happy hipo.webp" alt="happy hipo" width="200"></td>
+            </tr>
+            <tr>
+                <td>Cheesecake mermelada de maduixa</td>
+                <td>3.70</td>
+                <td><img src="mermelada de maduixa.webp" alt="mermelada" width="200"></td>
+            </tr>
+            <tr>
+                <td>Cheesecake de lotus</td>
+                <td>4.50</td>
+                <td><a><img src="lotus.webp" alt="nutella" width="200" ></a></td>
+            </tr>
+            <tr>
+                <td>Cheesecake de oreo</td>
+                <td>4.50</td>
+                <td><a><img src="oreo.webp" alt="nutella" width="200" ></a></td>
+            </tr>
+            <tr>
+                <td>Cheesecake de dulce de leche</td>
+                <td>4.50</td>
+                <td><a><img src="dulce de leche, .webp" alt="nutella" width="200" ></a></td>
+            </tr>
+            <tr>
+                <td>Cheesecake tradicional</td>
+                <td>3.20</td>
+                <td><a><img src="tradicional.webp" alt="nutella" width="200" ></a></td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="comanda">
+        <h2>Realitzar Comanda</h2>
+        <form>
+            <label for="pastís">Selecciona el teu pastís:</label>
+            <select id="pastís" name="pastís">
+                <option value="nutella">Cheesecake de Nutella - 4.50€</option>
+                <option value="hipo">Cheesecake de Happy Hipo Kinder - 4.20€</option>
+                <option value="maduixa">Cheesecake de Mermelada de Maduixa - 3.70€</option>
+                <option value="lotus">Cheesecake de lotus- 4.50€</option>
+                <option value="oreo">Cheesecake de oreo- 4.50€</option>
+                <option value="dulce de leche">Cheesecake de dulce de leche- 4.50€</option>
+                <option value="tradicional">Cheesecake tradicional- 3.20€</option>
+            </select>
+            <br><br>
+            <label for="quantitat">Quantitat:</label>
+            <input type="numero" id="quantitat" name="quantitat" min="1" value="1">
+            <br><br>
+            <label for="nom">Nom:</label>
+            <input type="text" id="nom" name="nom" required>
+            <br><br>
+            <label for="telefon">Telèfon:</label>
+            <input type="tel" id="telefon" name="telefon" required>
+            <br><br>
+            <button type="submit">Confirmar Comanda</button>
+        </form>
+    </div>
+</body>
+</html>
